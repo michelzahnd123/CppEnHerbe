@@ -3,7 +3,7 @@
 
 class Gecko{
 private:
-    static int nouvelle_creation;
+    char* nom_gecko;
 public:
     void afficher();
 };

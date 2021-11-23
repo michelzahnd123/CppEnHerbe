@@ -1,9 +1,9 @@
 #include <Arduino.h>
 #include "gecko.h"
 
-int Gecko::nouvelle_creation=0;
+Gecko::Gecko(arthur) {};             /* constructeur */
+Gecko::Gecko(benji) {};
 
 void afficher(){
-    int nouvelle_creation=nouvelle_creation+1;
-    printf("%s","Hello!\n");
+   Serial.println("Hello!");       /* Hello! RetourLigne */ 
 }
