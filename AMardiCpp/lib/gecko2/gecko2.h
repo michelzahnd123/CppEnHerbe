@@ -5,7 +5,7 @@
 
 class Gecko2{
     public:
-        char* name;
+        char* nom_du_gecko;
         Gecko2(char* name);
 };
 
