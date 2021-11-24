@@ -10,3 +10,7 @@ Gecko::Gecko(String name){
    this->name=name;
    Serial.println("Hello " + name + "!");
    }
+
+String Gecko::getName(){
+   return name;
+}

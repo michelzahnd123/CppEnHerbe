@@ -4,10 +4,12 @@
 #define GECKO_H
 
 class Gecko{
-public:
+private:
     String name;
+public:
     Gecko();
     Gecko(String name);
+    String getName();
 };
 
 #endif

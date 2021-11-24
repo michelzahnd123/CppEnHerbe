@@ -9,11 +9,12 @@ void setup() {
   Gecko benjy1;
 
   Serial.println("\nEx2:");
-  Gecko arthur2("arthur");        //on donne le nom test au constructeur de arthur2
-  Gecko benjy2;
-  Serial.println(arthur2.name);
-  Serial.println(benjy2.name);
   Serial.println("\nEx3:");
+  Gecko arthur2("arthur");
+  Gecko benjy2;
+  Serial.println(arthur2.getName());
+  Serial.println(benjy2.getName());
+
 }
 
 void loop() {
