@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "gecko1.h"
+#include "gecko.h"
 
 Gecko::Gecko() {
    Serial.println("Hello!\n");
