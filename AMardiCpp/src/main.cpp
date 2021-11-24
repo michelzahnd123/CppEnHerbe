@@ -11,10 +11,11 @@ void setup() {
   Gecko benjy;                      // c'est pareil pour benjy (Clément)
 */
   Serial.println("\nEx2:");         // au début de chaque exercice pour voir mieux ou l'on se trouve dans la sortie série
-
+  
+  //String nom_gecko = "arthur";
   Gecko arthur(String name);         // instance de Gecko nomée arthur
                                      //le constructeur affiche hello + name
-  Gecko benjy(String name);                    // benjy
+  Gecko benjy(String name);          // benjy
 
 
   Serial.println("\nEx3:");         // au début de chaque exercice
