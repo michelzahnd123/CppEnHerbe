@@ -2,10 +2,13 @@
 #include "gecko.h"
 
 Gecko::Gecko() {
+   this-> name="unknown";
    Serial.println("Hello!");
-}
+   Serial.println(name);
+   }
 
 Gecko::Gecko(String name){
-   Serial.print("Hello!");
+   this->name=name;
+   Serial.println("Hello " + name + "!");
    Serial.println(name);
-}
+   }

@@ -5,16 +5,16 @@ void setup() {
   Serial.begin(115200);
 
   Serial.println("\nEx1:");
-  Gecko arthur;
-  Gecko benjy;
+  Gecko arthur1;
+  Gecko benjy1;
 
   Serial.println("\nEx2:");
-  Gecko arthur2("test");//on donne le nom test au constructeur de arthur2
-
+  Gecko arthur2("arthur");        //on donne le nom test au constructeur de arthur2
+  Gecko benjy2;
 
   Serial.println("\nEx3:");
 }
 
 void loop() {
-  // rien a faire en boucle
+// rien a faire en boucle
 }

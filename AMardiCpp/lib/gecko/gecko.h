@@ -5,7 +5,7 @@
 
 class Gecko{
 public:
-    //String 
+    String name;
     Gecko();
     Gecko(String name);
 };
