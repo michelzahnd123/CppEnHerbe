@@ -1,7 +1,8 @@
 #include <Arduino.h>
 
-#ifndef GECKO_H
-#define GECKO_H
+#ifndef GECKO1_H
+#define GECKO1_H
+
 class Gecko{
 public:
     Gecko();

@@ -1,6 +1,5 @@
 #include <Arduino.h>
-#include "gecko1.h"
-#include "gecko2.h"                 //importation de Gecko.h (Clément)
+#include "gecko1.h"                 //importation de Gecko.h (Clément)
 
 void setup() {
   Serial.begin(115200);             // initialisation du moniteur
