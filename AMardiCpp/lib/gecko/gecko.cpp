@@ -12,5 +12,5 @@ Gecko::Gecko(String name){
    }
 
 String Gecko::getName(){
-   return name;
+   return this->name;
 }
