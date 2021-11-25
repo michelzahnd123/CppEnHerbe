@@ -14,7 +14,7 @@ public:
     String getName();
     int getAge();
     int setAge(int age);
-    String status();
+    void status();
 };
 
 #endif
