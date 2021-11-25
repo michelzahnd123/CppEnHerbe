@@ -3,7 +3,7 @@
 #ifndef GECKO_H
 #define GECKO_H
 
-class Gecko{
+class Gecko {
 private:
     String name;
     int age;
@@ -13,7 +13,7 @@ public:
     Gecko(String name, int age);
     String getName();
     int getAge();
-    int setAge(int age);
+    void setAge(int age);
     void status();
 };
 

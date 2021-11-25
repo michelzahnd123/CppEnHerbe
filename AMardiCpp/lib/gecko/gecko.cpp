@@ -25,8 +25,8 @@ int Gecko::getAge() {
    return this->age;
 }
 
-int Gecko::setAge(int age) {
-   return this->age = age;
+void Gecko::setAge(int age) {
+   this->age = age;
 }
 
 void Gecko::status() {
