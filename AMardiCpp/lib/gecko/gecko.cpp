@@ -14,7 +14,7 @@ Gecko::Gecko(String name) {
 Gecko::Gecko(String name, int age) {
    this->name = name;
    this->age = age;
-   Serial.println("Hello " + name + "!");
+   Serial.println("Hello " + name + "! I am " + age + " years old.");
 }
 
 String Gecko::getName() {
@@ -56,5 +56,15 @@ void Gecko::status() {
    default:
       Serial.println("Impossible Gecko");
       break;
+   }
+}
+
+void Gecko::hello(String string) {
+   Serial.println("Hello " + string + " I am " + this->name + " !");
+}
+
+void Gecko::hello(int nombre) {
+   for(int i = 0; i < nombre; i++) {
+      Serial.println("Hello I am " + this->name + " !");
    }
 }

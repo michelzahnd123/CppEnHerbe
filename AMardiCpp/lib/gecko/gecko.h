@@ -15,6 +15,8 @@ public:
     int getAge();
     void setAge(int age);
     void status();
+    void hello(String string);
+    void hello(int nombre);
 };
 
 #endif

@@ -16,9 +16,31 @@ void setup() {
   Serial.println(benjy2.getName());
 
   Serial.println("\nEx4:");
-  
+  Gecko arthur4("arthur", 0);
+  arthur4.status();
+  arthur4.setAge(1);
+  arthur4.status();
+  arthur4.setAge(3);
+  arthur4.status();
+  arthur4.setAge(12);
+  arthur4.status();
+  arthur4.setAge(51);
+  arthur4.status();
+
+
+  Serial.println("\nEx5:");
+  Gecko arthur5("arthur");
+  arthur5.hello(3);
+  arthur5.hello(true);
+  arthur5.hello("michel");
+
+
+
+
+
 }
 
 void loop() {
-// rien a faire en boucle
+  // rien a faire en boucle
 }
+
