@@ -30,26 +30,31 @@ int Gecko::setAge(int age){
    }
 
 String status(){
-   this ->age=getAge();
-   switch (getAge()) {
+   int age=getAge();
+   switch (age) {
    case 0:{
       Serial.println("Unborn Gecko");
-      return;
-      }
-   case (getAge==1 or getAge==2):{
+      break;}
+   case 1:
+   case 2:{
       Serial.println("Baby Gecko");
-      return;
-      }
-   case (getAge>=3 and getAge<=10):{
+      break;}
+   case 3:
+   case 4:
+   case 5:
+   case 6:
+   case 7:
+   case 8:
+   case 9:
+   case 10:{
       Serial.println("Adult Gecko");
-      return;
-      }
-   case (getAge>=11 and getAge<=13):{
+      break;}
+   case 11:
+   case 12:
+   case 13:{
       Serial.println("Old Gecko");
-      return;
-      }
-   case (getAge>13):{
+      break;}
+   default:{
       Serial.println("Impossible Gecko");
-      return;      
-      }
+      break;}    
    }
