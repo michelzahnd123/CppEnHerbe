@@ -15,6 +15,8 @@ void setup() {
   Serial.println(arthur2.getName());
   Serial.println(benjy2.getName());
 
+  Serial.println("\nEx4:");
+  
 }
 
 void loop() {
