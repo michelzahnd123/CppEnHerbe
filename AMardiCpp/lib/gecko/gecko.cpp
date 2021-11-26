@@ -2,7 +2,7 @@
 #include "gecko.h"
 
 Gecko::Gecko() {
-   this->name = "unknown";
+   this->name = "Unknown";
    Serial.println("Hello!");
 }
 
@@ -60,11 +60,25 @@ void Gecko::status() {
 }
 
 void Gecko::hello(String string) {
-   Serial.println("Hello " + string + " I am " + this->name + " !");
+   Serial.println("Hello " + string + ", I'm " + this->name + " !");
 }
 
 void Gecko::hello(int nombre) {
    for(int i = 0; i < nombre; i++) {
-      Serial.println("Hello I am " + this->name + " !");
+      Serial.println("Hello, I'm " + this->name + " !");
+   }
+}
+
+void Gecko::eat(String string){
+   if(string=="Meat"){
+      Serial.println("Yummy!");
+   }
+   else if (string=="Vegetable")
+   {
+      Serial.println("Erk!");
+   }
+   else
+   {
+      Serial.println("I can't eat this!");
    }
 }

@@ -17,6 +17,7 @@ public:
     void status();
     void hello(String string);
     void hello(int nombre);
+    void eat(String string);
 };
 
 #endif

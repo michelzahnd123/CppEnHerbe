@@ -10,7 +10,7 @@ void setup() {
 
   Serial.println("\nEx2:");
   Serial.println("\nEx3:");
-  Gecko arthur2("arthur");
+  Gecko arthur2("Arthur");
   Gecko benjy2;
   Serial.println(arthur2.getName());
   Serial.println(benjy2.getName());
@@ -29,12 +29,15 @@ void setup() {
 
 
   Serial.println("\nEx5:");
-  Gecko arthur5("arthur");
-  arthur5.hello(3);
-  arthur5.hello(true);
-  arthur5.hello("michel");
+  Gecko arthur5("mimi");
+  arthur5.hello("Titi");
+  arthur5.hello(2);
 
-
+Serial.println("\nEx6:");
+  Gecko arthur6("momo",3);
+  arthur6.eat("Meat");
+  arthur6.eat("Vegetable");
+  arthur6.eat("coca");
 
 
 
