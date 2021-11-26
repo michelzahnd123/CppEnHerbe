@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "gecko.h"
+#include <string.h>
 
 Gecko::Gecko() {
    this->name = "Unknown";
@@ -70,15 +71,15 @@ void Gecko::hello(int nombre) {
 }
 
 void Gecko::eat(String string){
+   String stringMaj;
+   for(int i=0; i<string.length(string); i++){
+      stringMaj(i) = toUpperCase(string(i));
+   }
+
    if(string=="Meat"){
-      Serial.println("Yummy!");
-   }
+      Serial.println("Yummy!");}
    else if (string=="Vegetable")
-   {
-      Serial.println("Erk!");
-   }
+   {Serial.println("Erk!");}
    else
-   {
-      Serial.println("I can't eat this!");
-   }
+   {Serial.println("I can't eat this!");}
 }
