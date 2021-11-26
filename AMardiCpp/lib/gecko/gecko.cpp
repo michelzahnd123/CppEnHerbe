@@ -71,14 +71,17 @@ void Gecko::hello(int nombre) {
 }
 
 void Gecko::eat(String string){
-   String stringMaj;
-   for(int i=0; i<string.length(string); i++){
-      stringMaj(i) = toUpperCase(string(i));
+
+   String stringMaj="";
+   int lenstring=strlen(string);
+
+   for(int i=0; i<lenstring; i++){
+      stringMaj=stringMaj+toUpperCase(string[i]);
    }
 
-   if(string=="Meat"){
+   if(stringMaj=="MEAT"){
       Serial.println("Yummy!");}
-   else if (string=="Vegetable")
+   else if (stringMaj=="VEGETABLE")
    {Serial.println("Erk!");}
    else
    {Serial.println("I can't eat this!");}
