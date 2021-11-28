@@ -112,3 +112,16 @@ int Gecko::getEnergy(){
 void Gecko::setEnergy(int energy){
    this->energy=energy;
    }
+
+void Gecko::work(){
+   if(getEnergy()>=25){
+      Serial.print("I'm working T.T ");
+      Serial.println(energy);
+      setEnergy(getEnergy()-9);
+      }
+   else{
+      Serial.print("Heyyy I'm too sleepy, better take a nap! ");
+      Serial.println(energy);
+      setEnergy(getEnergy()+50);
+      }
+   }

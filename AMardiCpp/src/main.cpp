@@ -41,7 +41,18 @@ Serial.println("\nEx6:");
   arthur6.eat("VEGETABLE");
   arthur6.eat("coca");
 
-
+Serial.println("\nEx7:");
+  Gecko arthur7("alain",5);
+  arthur7.work();
+  arthur7.work();
+  arthur7.work();
+  arthur7.work();
+  arthur7.work();
+  arthur7.work();
+  arthur7.work();
+  arthur7.work();
+  arthur7.work();
+  arthur7.work();
 
 }
 

@@ -22,6 +22,7 @@ public:
     void eat(String string);
     int getEnergy();
     void setEnergy(int energy);
+    void work();
 };
 
 #endif
