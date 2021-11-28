@@ -70,19 +70,32 @@ void Gecko::hello(int nombre) {
    }
 }
 
+   //    ------ partie de methode Not OK -----
+   //String stringMaj="";
+   //int lenstring=strlen(string);
+   //for(int i=0; i<lenstring; i++){
+   //   stringMaj=stringMaj+toUpperCase(string[i]);}
+   //
 void Gecko::eat(String string){
-
-   String stringMaj="";
-   int lenstring=strlen(string);
-
-   for(int i=0; i<lenstring; i++){
-      stringMaj=stringMaj+toUpperCase(string[i]);
+   if (string=="MEAT")
+   {
+      Serial.println("Yummy!");
+      setEnergy(getEnergy()+10);
    }
-
-   if(stringMaj=="MEAT"){
-      Serial.println("Yummy!");}
-   else if (stringMaj=="VEGETABLE")
-   {Serial.println("Erk!");}
    else
-   {Serial.println("I can't eat this!");}
+   {
+      if (string=="VEGETABLE"){
+         Serial.println("Erk!");
+         setEnergy(getEnergy()-10);}
+      else{
+         Serial.println("I can't eat this!");}
+   }
+}
+
+int Gecko::getEnergy(){
+   return this->energy;
+}
+
+void Gecko::setEnergy(int energy){
+   this->energy=energy;
 }

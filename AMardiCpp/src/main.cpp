@@ -35,8 +35,8 @@ void setup() {
 
 Serial.println("\nEx6:");
   Gecko arthur6("momo",3);
-  arthur6.eat("Meat");
-  arthur6.eat("Vegetable");
+  arthur6.eat("MEAT");
+  arthur6.eat("VEGETABLE");
   arthur6.eat("coca");
 
 
