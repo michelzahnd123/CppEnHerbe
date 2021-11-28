@@ -7,8 +7,8 @@ class Gecko {
 private:
     String name;
     int age;
-    int energy=100;
-    String repas;
+    int energy=75;
+    String meal;
 public:
     Gecko();
     Gecko(String name);
@@ -20,8 +20,6 @@ public:
     void hello(String string);
     void hello(int nombre);
     void eat(String string);
-    String getEat(String string);
-    void setEat(String string);
     int getEnergy();
     void setEnergy(int energy);
 };

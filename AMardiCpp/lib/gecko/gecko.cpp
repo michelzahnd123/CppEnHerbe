@@ -70,29 +70,40 @@ void Gecko::hello(int nombre) {
    }
 }
 
-void Gecko::eat(String repas){
-   if ((getEat(repas))=="MEAT")
+void Gecko::eat(String meal){
+   meal.toUpperCase();                    // transformation en Majuscules
+   if (meal=="MEAT")
    {
-      Serial.println("Yummy!");
-      setEnergy(getEnergy()+10);
+      Serial.print("Yummy! ");
+      Serial.print(meal);
+      Serial.print(" ");
+      if(energy<=90){                     // energie maxi 100
+         setEnergy(getEnergy()+10);
+         Serial.println(energy); 
+      }
+      else{Serial.println(" Energy : 100");}
    }
    else
    {
-      if ((getEat(repas))=="VEGETABLE"){
-         Serial.println("Erk!");
-         setEnergy(getEnergy()-10);}
+      if (meal=="VEGETABLE")
+         {
+         Serial.print("Erk! ");
+         Serial.print(meal);
+         Serial.print(" ");
+         if(energy>=10){                  // energie mini 0
+            setEnergy(getEnergy()-10);
+            Serial.println(energy);   
+         }
+         else{Serial.println(" Energy : 100");}
+      }
       else{
-         Serial.println("I can't eat this!");}
+         Serial.print("I can't eat this! ");
+         Serial.print(meal);
+         Serial.print(" ");
+         Serial.println(energy);
+      }
    }
 }
-
-String Gecko::getEat(String repas){
-   return this->repas;
-   }
-
-void Gecko::setEat(String repas) {
-   this->repas.toUpperCase();
-   }
 
 int Gecko::getEnergy(){
    return this->energy;
