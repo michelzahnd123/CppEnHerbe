@@ -70,21 +70,15 @@ void Gecko::hello(int nombre) {
    }
 }
 
-   //    ------ partie de methode Not OK -----
-   //String stringMaj="";
-   //int lenstring=strlen(string);
-   //for(int i=0; i<lenstring; i++){
-   //   stringMaj=stringMaj+toUpperCase(string[i]);}
-   //
-void Gecko::eat(String string){
-   if (string=="MEAT")
+void Gecko::eat(String repas){
+   if ((getEat(repas))=="MEAT")
    {
       Serial.println("Yummy!");
       setEnergy(getEnergy()+10);
    }
    else
    {
-      if (string=="VEGETABLE"){
+      if ((getEat(repas))=="VEGETABLE"){
          Serial.println("Erk!");
          setEnergy(getEnergy()-10);}
       else{
@@ -92,10 +86,18 @@ void Gecko::eat(String string){
    }
 }
 
+String Gecko::getEat(String repas){
+   return this->repas;
+   }
+
+void Gecko::setEat(String repas) {
+   this->repas.toUpperCase();
+   }
+
 int Gecko::getEnergy(){
    return this->energy;
-}
+   }
 
 void Gecko::setEnergy(int energy){
    this->energy=energy;
-}
+   }
